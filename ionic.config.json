@@ -1,5 +1,18 @@
 {
   "name": "weather",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/forecast",
+      "proxyUrl": "https://api.darksky.net/forecast/afed4363353b2a57e45a70499bf5e715/"
+    }  ,
+    {
+      "path": "/location",
+      "proxyUrl": "https://maps.googleapis.com/maps/api/geocode/"
+    }  
+  ]
 }
